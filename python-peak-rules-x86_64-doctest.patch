@@ -1,0 +1,11 @@
+--- Indexing.txt.orig	2009-06-03 07:43:19.000000000 -0400
++++ Indexing.txt	2009-06-03 07:43:54.000000000 -0400
+@@ -644,7 +644,7 @@
+ long integers::
+ 
+     >>> seven_long = to_bits([32,33,34])
+-    >>> print hex(seven_long)
++    >>> print hex(long(seven_long))
+     0x700000000L
+ 
+     >>> list(from_bits(seven_long))

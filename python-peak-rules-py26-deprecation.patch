@@ -1,0 +1,11 @@
+--- /PEAK-Rules/peak/rules/indexing.py	2009/02/22 04:20:24	2599
++++ PEAK-Rules/peak/rules/indexing.py	2009/07/15 04:30:57	2600
+@@ -217,7 +217,7 @@
+     def __new__(cls, engine, expr):
+         if cls is BitmapIndex:
+             cls = bitmap_index_type(engine, expr)
+-        return super(BitmapIndex, cls).__new__(cls, engine, expr)
++        return super(BitmapIndex, cls).__new__(cls)
+ 
+     def __init__(self, engine, expr):
+         self.extra = {}
